@@ -31,6 +31,13 @@ namespace TyresStore.Repository.Migrations
                         Model = c.String(),
                         Year = c.Int(nullable: false),
                         Color = c.String(),
+                        //changes here, add elements
+                        Price = c.Int(nullable: false),
+                        Power = c.String(),
+                        SpeedLimit = c.String(),
+                        Transmission = c.String(),
+                        Consumption = c.String()                    
+                        //changes here end
                     })
                 .PrimaryKey(t => t.ID);
             

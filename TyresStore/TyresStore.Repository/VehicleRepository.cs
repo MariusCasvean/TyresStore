@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TyresStore.Repository.Models;
-
 namespace TyresStore.Repository
 {
     public class VehicleRepository
