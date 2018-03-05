@@ -22,3 +22,16 @@ C:\Projects\workshop\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repos
 C:\Projects\workshop\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.csproj.CoreCompileInputs.cache
 C:\Projects\workshop\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.dll
 C:\Projects\workshop\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.pdb
+D:\Workshop\My application DVSE\TyresStore\TyresStore\TyresStore.Repository\bin\Debug\TyresStore.Repository.dll.config
+D:\Workshop\My application DVSE\TyresStore\TyresStore\TyresStore.Repository\bin\Debug\TyresStore.Repository.dll
+D:\Workshop\My application DVSE\TyresStore\TyresStore\TyresStore.Repository\bin\Debug\TyresStore.Repository.pdb
+D:\Workshop\My application DVSE\TyresStore\TyresStore\TyresStore.Repository\bin\Debug\EntityFramework.dll
+D:\Workshop\My application DVSE\TyresStore\TyresStore\TyresStore.Repository\bin\Debug\EntityFramework.SqlServer.dll
+D:\Workshop\My application DVSE\TyresStore\TyresStore\TyresStore.Repository\bin\Debug\EntityFramework.xml
+D:\Workshop\My application DVSE\TyresStore\TyresStore\TyresStore.Repository\bin\Debug\EntityFramework.SqlServer.xml
+D:\Workshop\My application DVSE\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.csprojResolveAssemblyReference.cache
+D:\Workshop\My application DVSE\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.Migrations.InitialCreate.resources
+D:\Workshop\My application DVSE\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.csproj.GenerateResource.Cache
+D:\Workshop\My application DVSE\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.csproj.CoreCompileInputs.cache
+D:\Workshop\My application DVSE\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.dll
+D:\Workshop\My application DVSE\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.pdb
