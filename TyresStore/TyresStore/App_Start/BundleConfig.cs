@@ -21,7 +21,10 @@ namespace TyresStore
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                      "~/Scripts/respond.js",
+                      "~/Scripts/client/handlers.js",
+                      "~/Scripts/client/basketModel.js",
+                      "~/Scripts/client/mainModel.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",

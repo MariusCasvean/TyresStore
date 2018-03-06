@@ -43,12 +43,12 @@ namespace TyresStore.Repository.Migrations
                 //up to here
             };
 
-			vehicles.ForEach(v => context.Vehicles.AddOrUpdate(x => new { x.Manufacturer, x.Model, x.Year }, v));
-			context.SaveChanges();
+            vehicles.ForEach(v => context.Vehicles.AddOrUpdate(x => new { x.Manufacturer, x.Model, x.Year, x.Color, x.Price, x.Power, x.SpeedLimit, x.Transmission, x.Consumption }, v)); //add from color to consumption
+            context.SaveChanges();
 
             var tyres = new List<Tyre>
             {
-                new Tyre{VehicleId=1,Brand="Pirelli", Season="Winter", ArticleCode="205/55R16 91V TL", Price = 100.75},
+                new Tyre{VehicleId=1,Brand="Pirelli", Season="Winter", ArticleCode="205/55R16 91V TL", Price=100.75},
                 new Tyre{VehicleId=1,Brand="GoodYear", Season="Summer",  ArticleCode="205/55R16 91W TL", Price=85.75},
                 new Tyre{VehicleId=1,Brand="Dunlop", Season="All",  ArticleCode="225/75R16 90W TL", Price=185.6},
                 new Tyre{VehicleId=1,Brand="Continental", Season="Winter",  ArticleCode="205/55R16 91V TL", Price=205.5},
@@ -56,10 +56,10 @@ namespace TyresStore.Repository.Migrations
                 new Tyre{VehicleId=2,Brand="Continental", Season="All",  ArticleCode="205/55R16 91W TL", Price=104},
                 new Tyre{VehicleId=3,Brand="GoodYear", Season="Winter",  ArticleCode="245/75R16	55V TL", Price=155.9},
                 new Tyre{VehicleId=3,Brand="Pirelli", Season="All",  ArticleCode="205/55R16 91V TL", Price=274.6},
-                new Tyre{VehicleId=3,Brand="Continental", Season="Summer",  ArticleCode="225/75R16 90W TL", Price= 300}
+                new Tyre{VehicleId=3,Brand="Continental", Season="Summer",  ArticleCode="225/75R16 90W TL", Price=300}
             };
-			tyres.ForEach(t => context.Tyres.AddOrUpdate(x => new { x.Brand, x.Season, x.ArticleCode }, t));
-			context.SaveChanges();
+            tyres.ForEach(t => context.Tyres.AddOrUpdate(x => new { x.Brand, x.Season, x.ArticleCode }, t));
+            context.SaveChanges();
         }
     }
 }

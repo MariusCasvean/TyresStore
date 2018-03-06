@@ -1,0 +1,12 @@
+﻿body {
+    background-image: url("blackCar.jpg");
+}
+
+.table {
+    background-color: rgba(0, 255, 0, .7);
+}
+
+.w40 {
+    width: 50%;
+}
+

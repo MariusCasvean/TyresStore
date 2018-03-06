@@ -19,10 +19,15 @@ namespace TyresStore.Repository.Models
         public string Color { get; set; }
 
         public virtual ICollection<Tyre> Tyres { get; set; }
-        public int Price { get; internal set; }
+
+        public int Price { get; set; }
+
         public string Power { get; internal set; }
+
         public string SpeedLimit { get; internal set; }
+
         public string Transmission { get; internal set; }
+
         public string Consumption { get; internal set; }
     }
 }
