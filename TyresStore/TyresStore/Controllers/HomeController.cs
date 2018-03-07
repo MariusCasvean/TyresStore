@@ -11,6 +11,18 @@ namespace TyresStore.Controllers
     {
         VehicleRepository vehiclesRepo = new VehicleRepository();
         TyresRepository tyresRepo = new TyresRepository();
+        BasketRepository basketRepo = new BasketRepository();
+
+
+
+        public ActionResult GetBasketItems()
+        {
+            return Json(basketRepo.GetItems(), JsonRequestBehavior.AllowGet);
+        }
+
+    
+
+
         public ActionResult Index()
         {
             List<Vehicle> vehicles = vehiclesRepo.GetVehicles();
@@ -26,6 +38,37 @@ namespace TyresStore.Controllers
 
             return ret;
         }
+
+        //here
+        public ActionResult AddTyreToBasket(int tyreId, string description)
+        {
+            bool tyreAdded = basketRepo.TyreAlreadyAdded(tyreId);
+            if (!tyreAdded)
+                basketRepo.StoreTyre(tyreId, description);
+
+            return Json(new { exists = tyreAdded });
+        }
+
+        public string GetBasketHtml()
+        {
+            List<Basket> basket = basketRepo.GetItems();
+
+            string ret = RenderPartialViewToString("~/Views/Home/Basket.cshtml", basket);
+
+            return ret;
+        }
+
+        public string RemoveItemFromBasket(int itemId)
+        {
+            basketRepo.RemoveItem(itemId);
+
+            List<Basket> basket = basketRepo.GetItems();
+
+            string ret = RenderPartialViewToString("~/Views/Home/Basket.cshtml", basket);
+
+            return ret;
+        }
+        //to here
 
         public string RenderPartialViewToString(string viewName, object model)
         {
@@ -43,9 +86,6 @@ namespace TyresStore.Controllers
             }
         }
 
-
-
-
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -59,5 +99,7 @@ namespace TyresStore.Controllers
 
             return View();
         }
-    }
+    }    
 }
+
+

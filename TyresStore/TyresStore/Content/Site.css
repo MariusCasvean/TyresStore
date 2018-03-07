@@ -22,3 +22,21 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*from here*/
+
+.header .shopping-cart {
+    width: calc(15% - 20px);
+    float: right;
+    height: 50px;
+    display: inline-block;
+}
+
+/*.header .shopping-cart cart-button {
+    float: right;
+    vertical-align: middle;
+    font-size: 30px;
+    margin: 10px;
+}*/
+
+/*to here*/

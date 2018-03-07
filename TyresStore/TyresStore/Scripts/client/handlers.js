@@ -4,8 +4,10 @@
 
 
 function displayTyres(tyresHtml) {
-    $("vehicle-table").addClass("w40");
+    $(".table-vehicle").addClass("w40");
     $(".right-icon").addClass("visible");
+    $(".optionalColumns").hide();
+
 
     $(".tyres-table .table-content").html("");
     var htmlContent = tyresHtml;

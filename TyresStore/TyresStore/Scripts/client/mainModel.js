@@ -5,8 +5,8 @@ function MainModel() {
     var _self = this;
 
     this.showLoadingTyres = false;
-    //basketModel = new BasketModel();
-    //basketModel.getItems();
+    basketModel = new BasketModel();
+    basketModel.getItems();
 
     this.loadTyres = function (vehicleID) {
         $.ajax({

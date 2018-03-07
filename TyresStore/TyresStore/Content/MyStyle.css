@@ -1,12 +1,37 @@
 ﻿body {
     background-image: url("blackCar.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 
-.table {
-    background-color: rgba(0, 255, 0, .7);
+.table-vehicle {
+    background-color: rgba(100, 140, 120, .8);
+    color: black;
+    display: inline-block;
+}
+
+.table-tyres {
+    background-color: rgba(153, 153, 77, .7);
+    width: 60%;
+    color: black;
+    /*display: inline-block;
+    margin-top: 0;
+    position: fixed;
+    float: right !important;*/
 }
 
 .w40 {
-    width: 50%;
+    width: 35%;
 }
 
+footer {
+    background-color: rgba(255, 119, 51, .5);
+    text-align: center;
+    color: white;
+}
+
+.tyres-title {
+    background-color: lightsteelblue;
+    color: black;
+}

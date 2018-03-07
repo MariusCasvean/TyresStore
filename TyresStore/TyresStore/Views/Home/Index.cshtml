@@ -7,18 +7,18 @@
 
 <link href="@Url.Content("/Content/MyStyle.css")" rel="stylesheet" type="text/css" />
 
-<table class="table">
+<table class="table table-vehicle">
     <thead>
-        <tr>
+        <tr class="table-head-vehicle">
             <th>Manufacturer</th>
             <th>Model</th>
             <th>Year</th>
-            <th>Color</th>
-            <th>Price</th>
-            <th>Power</th>
-            <th>SpeedLimit</th>
-            <th>Transmission</th>
-            <th>Consumption</th>
+            <th class="optionalColumns">Color</th>
+            <th class="optionalColumns">Price</th>
+            <th class="optionalColumns">Power</th>
+            <th class="optionalColumns">SpeedLimit</th>
+            <th class="optionalColumns">Transmission</th>
+            <th class="optionalColumns">Consumption</th>
             <th>ID</th>
         </tr>
     </thead>
@@ -29,16 +29,15 @@
                 <td>@vehicle.Manufacturer</td>
                 <td>@vehicle.Model</td>
                 <td>@vehicle.Year</td>
-                <td>@vehicle.Color</td>
-                <td>@vehicle.Price</td>
-                <td>@vehicle.Power</td>
-                <td>@vehicle.SpeedLimit</td>
-                <td>@vehicle.Transmission</td>
-                <td>@vehicle.Consumption</td>
+                <td class="optionalColumns">@vehicle.Color</td>
+                <td class="optionalColumns">@vehicle.Price</td>
+                <td class="optionalColumns">@vehicle.Power</td>
+                <td class="optionalColumns">@vehicle.SpeedLimit</td>
+                <td class="optionalColumns">@vehicle.Transmission</td>
+                <td class="optionalColumns">@vehicle.Consumption</td>
                 <td>@vehicle.ID</td>
                 <td class="button-select">
-                    <!-- <button type="button" class="btn btn-primary">Add to cart<span class="glyphicon glyphicon-plus"></span></button> -->
-                    <button type="button" class="btn btn-primary select-vehicle-button" onclick="mainModel.loadTyres(@vehicle.ID)">Select<span class="glyphicon glyphicon"></span></button>
+                    <button type="button" class="btn btn-primary select-vehicle-button" onclick="mainModel.loadTyres(@vehicle.ID)">Select <span class="glyphicon glyphicon-ok-sign"></span></button>
                 </td>
             </tr>
         }
