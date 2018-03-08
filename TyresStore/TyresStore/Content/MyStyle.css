@@ -1,5 +1,5 @@
 ﻿body {
-    background-image: url("blackCar.jpg");
+    background-image: url("../Content/Images/blackCar.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
 
@@ -9,16 +9,30 @@
     background-color: rgba(100, 140, 120, .8);
     color: black;
     display: inline-block;
+    width: 82%;
+}
+
+.tyres-table {
+    float: right;
+    width: 50%;
+    position: fixed;
+    display: inline-block;
+    margin-left: 15px;
 }
 
 .table-tyres {
     background-color: rgba(153, 153, 77, .7);
-    width: 60%;
+    width: 90%;
     color: black;
     /*display: inline-block;
     margin-top: 0;
     position: fixed;
     float: right !important;*/
+}
+
+.table-head-vehicle {
+    background-color: rgba(100, 180, 120, .7) !important;
+    /*text-align: center !important;*/
 }
 
 .w40 {
@@ -32,6 +46,58 @@ footer {
 }
 
 .tyres-title {
-    background-color: lightsteelblue;
+    background-color: rgba(140, 153, 90, .7);
     color: black;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+
+.btn {
+    border-radius: 20px !important;
+}
+
+td, th {
+    border: solid 1px black;    
+}
+
+th:hover, td:hover {
+    background-color: rgba(83, 198, 140, .4);
+    cursor: pointer;
+}
+
+th {
+    text-align: center !important;
+}
+
+.remove {
+    background-color: indianred !important;
+}
+
+.remove th {
+    background-color: gray !important;
+}
+
+#selectHere {
+    /*font-size: 16px;*/
+    text-align: center !important;
+    -webkit-animation-name: Here;
+    -webkit-animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+}
+@-webkit-keyframes Here {
+    from {
+        color: brown;
+    }
+
+    to {
+        color: black;
+    }
+}
+
+
+.basket-table {
+    width: 100%;
 }

@@ -9,14 +9,16 @@
                 <th>Season</th>
                 <th>Article code</th>
                 <th>Price</th>
-                <th></th>
+                <th>
+                
+                </th>
             </tr>
         </thead>
         <tbody>
             @foreach (var tyre in Model)
             {
                 <tr>
-                    <td>@tyre.Brand</td>
+                    <td><div class="tableWidth">@tyre.Brand</div></td>
                     <td>@tyre.Season</td>
                     <td>@tyre.ArticleCode</td>
                     <td>@tyre.Price</td>                    

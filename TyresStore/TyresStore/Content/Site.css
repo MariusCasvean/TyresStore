@@ -30,6 +30,12 @@ textarea {
     float: right;
     height: 50px;
     display: inline-block;
+    /*move shopping-cart to the left in head table, with this margin right*/
+    margin-right: 80px;
+}
+
+.shopping-cart {
+    position: fixed;
 }
 
 /*.header .shopping-cart cart-button {

@@ -11,10 +11,10 @@ namespace TyresStore.Repository.Interfaces
     {
         void StoreTyre(int tyreId, string description);
 
-        //List<Basket> GetItems();
+        List<Basket> GetItems();
 
-        //bool TyreAlreadyAdded(int tyreId);
+        bool TyreAlreadyAdded(int tyreId);
 
-        //void RemoveItem(int itemId); //check this argument !!!
+        void RemoveItem(int itemId); //check this argument !!!
     }
 }

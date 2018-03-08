@@ -13,7 +13,7 @@ namespace TyresStore.Repository.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201803060917551_InitialCreate"; }
+            get { return "201803081022192_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source

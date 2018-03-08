@@ -23,3 +23,38 @@ function displayTyres(tyresHtml) {
 function updateCartCount() {
     $(".cart-button").html("(" + basketModel.basketItems.length + ")");
 };
+
+
+//// implement the animation tables function
+//$.('.select-vehicle-button').on('click', function () {
+//    if ($(this).parent().find("vehicle-table").hasClass("animated")) {
+//        $('.vehicle-content').animate({
+//            width: "50%",
+//            duration: 100 //ms
+//        }, {
+//                complete: function () {
+//                    $(this).parents().find(".tyres-table").fadeIn("slow");
+//                    $(this).addClass("animated");
+//                    $('close-button').fadeIn("slow");
+//                }
+//            });
+//    }
+//    else {
+//        $(this).parents().find(".tyres-table").hide();
+//        $(this).parents().find(".tyres-table").fadeIn("slow");
+//    }
+//});
+
+//$('.close-button, .right-arrow').on('click', function () {
+//    $(".tyres-table").hide();
+//    $(".close-button").hide();
+
+//    $('.vehicle-content').animate({
+//        width: "100%",
+//        duration: 100
+//    }, {
+//            complete: function () {
+//                //missing code here
+//            }
+//        })
+//})

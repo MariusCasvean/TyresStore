@@ -51,13 +51,9 @@
     <Compile Include="Interfaces\IBasketRepository.cs" />
     <Compile Include="Interfaces\ITyresRepository.cs" />
     <Compile Include="Interfaces\IVehiclesRepository.cs" />
-    <Compile Include="Migrations\201803060917551_InitialCreate.cs" />
-    <Compile Include="Migrations\201803060917551_InitialCreate.Designer.cs">
-      <DependentUpon>201803060917551_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201803070709575_basket.cs" />
-    <Compile Include="Migrations\201803070709575_basket.Designer.cs">
-      <DependentUpon>201803070709575_basket.cs</DependentUpon>
+    <Compile Include="Migrations\201803081022192_InitialCreate.cs" />
+    <Compile Include="Migrations\201803081022192_InitialCreate.Designer.cs">
+      <DependentUpon>201803081022192_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Basket.cs" />
@@ -121,11 +117,8 @@
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201803060917551_InitialCreate.resx">
-      <DependentUpon>201803060917551_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201803070709575_basket.resx">
-      <DependentUpon>201803070709575_basket.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201803081022192_InitialCreate.resx">
+      <DependentUpon>201803081022192_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -5,27 +5,29 @@
     ViewBag.Title = "Home Page";
 }
 
-<link href="@Url.Content("/Content/MyStyle.css")" rel="stylesheet" type="text/css" />
+
 
 <table class="table table-vehicle">
     <thead>
         <tr class="table-head-vehicle">
-            <th>Manufacturer</th>
-            <th>Model</th>
-            <th>Year</th>
-            <th class="optionalColumns">Color</th>
-            <th class="optionalColumns">Price</th>
-            <th class="optionalColumns">Power</th>
-            <th class="optionalColumns">SpeedLimit</th>
-            <th class="optionalColumns">Transmission</th>
-            <th class="optionalColumns">Consumption</th>
             <th>ID</th>
+            <th title="Below, this column provides you informations about the name of the car constructor">Manufacturer</th>
+            <th title="The model of the car">Model</th>
+            <th title="This referrs to year of fabrication">Year</th>
+            <th title="The standard color of the car, which can be changed if needed" class="optionalColumns">Color</th>
+            <th title="The price is not negociable and it is in euro" class="optionalColumns">Price</th>
+            <th title="Power of the engine, expressed in horsepower" class="optionalColumns">Power</th>
+            <th title="The maximum speed that car can reach" class="optionalColumns">SpeedLimit</th>
+            <th title="Reffers to gearbox" class="optionalColumns">Transmission</th>
+            <th title="Fuel consumption per 100km" class="optionalColumns">Consumption</th>
+            <th id="selectHere">Select</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var vehicle in Model)
         {
             <tr>
+                <td>@vehicle.ID</td>
                 <td>@vehicle.Manufacturer</td>
                 <td>@vehicle.Model</td>
                 <td>@vehicle.Year</td>
@@ -34,8 +36,7 @@
                 <td class="optionalColumns">@vehicle.Power</td>
                 <td class="optionalColumns">@vehicle.SpeedLimit</td>
                 <td class="optionalColumns">@vehicle.Transmission</td>
-                <td class="optionalColumns">@vehicle.Consumption</td>
-                <td>@vehicle.ID</td>
+                <td class="optionalColumns">@vehicle.Consumption</td>                
                 <td class="button-select">
                     <button type="button" class="btn btn-primary select-vehicle-button" onclick="mainModel.loadTyres(@vehicle.ID)">Select <span class="glyphicon glyphicon-ok-sign"></span></button>
                 </td>
@@ -45,14 +46,9 @@
 </table>
 
 <div class="tyres-table">
-    <div class="header-table"> <span class="tyres-title">Tyres</span></div>
+    <div class="header-table"><span class="tyres-title">Tyres available for this car model</span></div>
     <div class="table-content"></div>
 </div>
-
-
-<body>
-
-</body>
 
 
 @*<div class="jumbotron">

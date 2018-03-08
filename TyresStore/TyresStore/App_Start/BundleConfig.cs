@@ -30,7 +30,8 @@ namespace TyresStore
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
-                      "~/Content/colorbox.css"));
+                      "~/Content/colorbox.css",
+                      "~/Content/MyStyle.css"));
         }
     }
 }
